@@ -227,12 +227,9 @@ DEPENDENCIES
   byebug
   capybara
   coffee-rails (~> 4.2)
-<<<<<<< HEAD
-  factory_girl_rails
-=======
   cucumber-rails
   database_cleaner
->>>>>>> 39ec2269b8f3b59a11dc9826acc9f6f4747c20ad
+  factory_girl_rails
   foundation-rails
   jbuilder (~> 2.5)
   jquery-rails
