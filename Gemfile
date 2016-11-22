@@ -31,10 +31,19 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'foundation-rails'
 
+
 group :development, :test do
-	gem 'rspec-rails'
+
+  gem 'rspec-rails'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+
+  gem 'factory_girl_rails'
+
+  gem 'spring'
+
+  gem 'spring-commands-rspec'
+
 end
 
 group :development do
@@ -42,10 +51,16 @@ group :development do
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  
+
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+group :test do
+
+  gem 'capybara'
+
+end
 
 group :production do
 gem 'pg'
