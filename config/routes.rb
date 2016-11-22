@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'static_pages/sign-in'
 
   get 'static_pages/sign-up'
+  get 'signup' => 'users#new'
 
   get 'static_pages/home'
 

@@ -35,8 +35,7 @@ gem 'foundation-rails'
 group :development, :test do
 
 	gem 'rspec-rails'
-	gem 'cucumber-rails', :require => false
-	gem 'database_cleaner'
+	
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -46,6 +45,8 @@ group :development, :test do
   gem 'spring'
 
   gem 'spring-commands-rspec'
+  gem 'spring-commands-cucumber'
+  
 
 end
 
@@ -62,7 +63,8 @@ end
 group :test do
 
   gem 'capybara'
-
+    gem 'cucumber-rails', :require => false
+gem 'database_cleaner'
 end
 
 group :production do
